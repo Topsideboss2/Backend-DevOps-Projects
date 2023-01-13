@@ -1,0 +1,167 @@
+DEPLOY LARAVEL APP
+
+ssh-keygen -t rsa
+#generates the private and public keys
+
+#clone repository
+
+cd /var/www/
+
+git clone git@gitlab.com:oaknet2/amal-ivestments/backend/amal-ivestments.git
+
+Once updated, we have to enable Apache mod_rewrite module
+
+$ sudo a2enmod rewri
+
+mysql -u root -p
+
+	use myql;
+
+	ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'Finnacle@1992';
+
+
+Now we’ll to install PhpMyAdmin
+
+$ sudo apt-get install phpmyadmin
+
+Once finished installing PhpMyAdmin we need to add it into the bottom of to Apache’s config file
+
+Include /etc/phpmyadmin/apache.conf
+
+Note: apache2.conf file is in /etc/apache2/apache2.conf
+
+$ sudo nano /etc/apache2/apache2.conf
+
+Once that’s finished restart Apache
+
+$ sudo service apache2 restart
+
+$sudo apt-get install composer
+
+And now, we’ll clone the repo into /var/www/amal-backend, once cloned we need to do composer installtion into the folder of our project
+
+composer install
+
+	//////
+	change php version
+
+			#Disable php version
+		sudo a2dismod php8.1
+		sudo a2enmod php7.1
+		sudo update-alternatives --set php /usr/bin/php7.2
+
+
+
+# install php requirements
+
+
+apt-get install php8.1-{BCMath,Ctype,curl,DOM,Fileinfo,Mbstring,PDO,Tokenizer,XML,zip,mysql,fpm}
+
+cd /var/www/investments-backend
+
+php artisan storage:link
+
+
+
+cd /var/www/
+
+#change folder ownerships
+
+chown -R www-data:www-data investments-backend
+
+#Change folder permissions
+
+chmod -R 755 bootstrap/ public/ storage
+
+
+cp .env.example .env
+
+nano .env
+
+		# adding database name and app name gmail credentials app url
+
+
+#create app password for your personal gmail account
+
+
+mysql -u root -p
+
+	create database investmentsbackend;
+
+	exit
+
+#populate database
+
+php artisan migrate
+
+php artisan key:generate
+
+
+	php artisan passport:install
+
+
+#serve on apache
+
+cd /etc/apache2/sites-available/
+
+nano investmentsbackend.conf
+
+
+
+<VirtualHost *:10001>
+        # The ServerName directive sets the request scheme, hostname and port that
+        # the server uses to identify itself. This is used when creating
+        # redirection URLs. In the context of virtual hosts, the ServerName
+        # specifies what hostname must appear in the request's Host: header to
+        # match this virtual host. For the default virtual host (this file) this
+        # value is not decisive as it is used as a last resort host regardless.
+        # However, you must set it for any further virtual host explicitly.
+        #ServerName www.example.com
+
+        ServerAdmin webmaster@localhost
+        DocumentRoot /var/www/investments-backend/public
+
+        DirectoryIndex index.php
+
+        <Directory /var/www/investments-backend/public>
+                Options Indexes FollowSymlinks Multiviews
+                Require all granted
+                AllowOverride All
+                RewriteEngine On
+                RewriteBase /var/www/investments-backend/public
+
+        </Directory>
+        # Available loglevels: trace8, ..., trace1, debug, info, notice, warn,
+        # error, crit, alert, emerg.
+        # It is also possible to configure the loglevel for particular
+        # modules, e.g.
+        #LogLevel info ssl:warn
+
+        ErrorLog ${APACHE_LOG_DIR}/error.log
+        CustomLog ${APACHE_LOG_DIR}/access.log combined
+
+        # For most configuration files from conf-available/, which are
+        # enabled or disabled at a global level, it is possible to
+        # include a line for only one particular virtual host. For example the
+        # following line enables the CGI configuration for this host only
+        # after it has been globally disabled with "a2disconf".
+        #Include conf-available/serve-cgi-bin.conf
+</VirtualHost
+
+
+
+#enable apache configuration file
+
+ a2ensite investmentsbackend.conf
+
+ service apache2 restart
+
+Enable port 10001
+
+ nano /etc/apache2/ports.conf 
+
+		Listen 10001
+		Listen 10002
+		Listen 10003
+
+ http://192.168.1.10:10001
