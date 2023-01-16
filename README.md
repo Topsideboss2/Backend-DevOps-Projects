@@ -7,15 +7,15 @@ This learning journey towards DevOps started for me early 2023 when I was active
 I have a long journey ahead of me for the next 90 days that will cover the following areas of DevOps:
 
 - [ ✔️  ] ♾️  1 > Understanding DevOps Lifecycle
-- [ ✔️  ] ♾️  1 > Learning Linux Basics
-- [ ✔️  ] ♾️  1 > Picking a programming Language i.e Python
-- [ ✔️  ] ♾️  1 > Understanding Networking
-- [ ✔️  ] ♾️  1 > Understanding how public cloud works i.e Amazon Web Services(AWS)
-- [ ✔️  ] ♾️  1 > Use Git effectively
-- [ ✔️  ] ♾️  1 > Infrastructure as code i.e Terraform
-- [ ✔️  ] ♾️  1 > Automate Configuration Management
-- [ ✔️  ] ♾️  1 > CI/CD Pipelines
-- [ ✔️  ] ♾️  1 > Containers
-- [ ✔️  ] ♾️  1 > Kubernetes
-- [ ✔️  ] ♾️  1 > Monitoring, Log Management and Data Visualisation
-- [ ✔️  ] ♾️  1 > Store and Protect Data
+- [ ✔️  ] ♾️  2 > Learning Linux Basics
+- [ ✔️  ] ♾️  3 > Picking a programming Language i.e Python
+- [ ✔️  ] ♾️  4 > Understanding Networking
+- [ ✔️  ] ♾️  5 > Understanding how public cloud works i.e Amazon Web Services(AWS)
+- [ ✔️  ] ♾️  6 > Use Git effectively
+- [ ✔️  ] ♾️  7 > Infrastructure as code i.e Terraform
+- [ ✔️  ] ♾️  8 > Automate Configuration Management
+- [ ✔️  ] ♾️  9 > CI/CD Pipelines
+- [ ✔️  ] ♾️  10 > Containers
+- [ ✔️  ] ♾️  11 > Kubernetes
+- [ ✔️  ] ♾️  12 > Monitoring, Log Management and Data Visualisation
+- [ ✔️  ] ♾️  13 > Store and Protect Data
