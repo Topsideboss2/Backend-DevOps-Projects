@@ -13,6 +13,7 @@ Apache HTTP Web Server (Apache) is an open-source web application for deploying 
 Simple commands you'll have to use:
 
 | Command | Description |
+| ------- | ----------- |
 | `sudo apt-get update` | Refresh your local software package database to make sure you are accessing the latest versions |
 | `sudo apt-get install apache2` | Installs the apache package in ubuntu |
 
