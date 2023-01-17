@@ -1,21 +1,11 @@
 ## Introduction
 
-Welcome to my DevOps Projects repository. I aspire to document my journey in DevOps/Cloud as I adventure to learn a good foundational understanding of all the tools and concepts.
+## Welcome
 
-This learning journey towards DevOps started for me early 2023 when I was actively looking for an external attachment as required by my institution of learning. And that was when I came across Oaknet Business (Engineering and Technology) and after a series of interviews and chowcasing how passionate I am to learn, they offered me an opportunity to concentrate my efforts around DevOps and the community surrounding these technologies. Oaknet Business was admittedly the best choice because they offer Software, Big Data, Smart Data Centres, Control Rooms, Internet Of Things among other Technological Services to prestigious clients and I only saw it fit to accept the opportunity. 
+This is my DevOps projects repository that is meant to help you easily interpret and understand these simple projects. 
+Following an internship opportunity at Oaknet Business where they offer Technological Solutions for all types of clients, I was able to implement these projects and learn a lot from the team.
+I hope the following steps outlined will help you navigate and implement these projects.
+My wish to you is that you will be able to learn as much as possible from this repository just as much as I did from my colleagues and in turn assist others.
 
-I have a long journey ahead of me for the next 90 days that will cover the following areas of DevOps:
+One thing I came to understand in the long run was that documenting is a huge part of working in the field. The sooner one starts to document the steps taken to deploy a project, the better it'll help them in the long run.
 
-- [ ✔️  ] ♾️  1 > Understanding DevOps Lifecycle
-- [ ✔️  ] ♾️  2 > Learning Linux Basics
-- [ ✔️  ] ♾️  3 > Picking a programming Language i.e Python
-- [ ✔️  ] ♾️  4 > Understanding Networking
-- [ ✔️  ] ♾️  5 > Understanding how public cloud works i.e Amazon Web Services(AWS)
-- [ ✔️  ] ♾️  6 > Use Git effectively
-- [ ✔️  ] ♾️  7 > Infrastructure as code i.e Terraform
-- [ ✔️  ] ♾️  8 > Automate Configuration Management
-- [ ✔️  ] ♾️  9 > CI/CD Pipelines
-- [ ✔️  ] ♾️  10 > Containers
-- [ ✔️  ] ♾️  11 > Kubernetes
-- [ ✔️  ] ♾️  12 > Monitoring, Log Management and Data Visualisation
-- [ ✔️  ] ♾️  13 > Store and Protect Data
