@@ -20,6 +20,7 @@ Simple commands you'll have to use:
 
 ## Step 2: Install mySQL 
 Laravel uses a MariaDB or MySQL as a database backend. So you will need to create a database and user for Laravel.
+
 Connect to the MySQL using the commands below:
 
 | Command | Description |
