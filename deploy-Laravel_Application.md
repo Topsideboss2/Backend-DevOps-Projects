@@ -156,3 +156,9 @@ Add the following lines:
 | ------- | ----------- |
 | `a2ensite investments-mark.conf` | Enable apache configuration file |
 | `service apache2 restart` | Restart the Apache server to apply the changes|
+
+## Step 12: Enable ports
+
+| Command | Description |
+| ------- | ----------- |
+| `vim /etc/apache2/ports.conf` | Add the respective ports on the file |
