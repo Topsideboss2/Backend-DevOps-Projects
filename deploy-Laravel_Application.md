@@ -1,6 +1,6 @@
 # Deploy Laravel Application
 
-This is a step by step instruction on how laravel applications are deployed onto an **Apache Server** running on a **Linux Server with Ubuntu** operating system.
+This is a step by step instruction on how **Laravel** applications are deployed onto an **Apache Server** running on a **Linux Server with Ubuntu** operating system.
 
 ## Prerequisites
 * An Operating System running Ubuntu Linux
