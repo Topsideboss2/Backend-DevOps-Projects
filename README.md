@@ -11,4 +11,4 @@ One thing I came to appreciate during my time as a DevOps intern was that docume
 
 ## What Is Laravel? 
 
-Laravel is a free and open-source PHP framework that comes with tools and resources that help you build robust and modern web applications and provides all of the features you need as a back-end developer such as routing, validation, caching, queues, file storage and more.
+Laravel is a free and open-source PHP framework that comes with tools and resources that help you build robust and modern web applications and it provides all of the features you need as a back-end developer such as routing, validation, caching, queues, file storage and more.
