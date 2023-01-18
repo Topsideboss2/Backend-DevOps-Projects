@@ -148,3 +148,10 @@ Add the following lines:
         # after it has been globally disabled with "a2disconf".
         #Include conf-available/serve-cgi-bin.conf
 </VirtualHost>``` 
+
+## Step 11: Enable Apache Configuration File
+
+| Command | Description |
+| ------- | ----------- |
+| `a2ensite investments-mark.conf` | Enable apache configuration file |
+| `service apache2 restart` | Restart the Apache server to apply the changes|
