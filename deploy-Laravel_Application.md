@@ -120,16 +120,16 @@ Add the following lines:
         #ServerName www.example.com
 
         ServerAdmin webmaster@localhost
-        DocumentRoot /var/www/investments-backend/public
+        DocumentRoot /var/www/investments-mark/public
 
         DirectoryIndex index.php
 
-        <Directory /var/www/investments-backend/public>
+        <Directory /var/www/investments-mark/public>
                 Options Indexes FollowSymlinks Multiviews
                 Require all granted
                 AllowOverride All
                 RewriteEngine On
-                RewriteBase /var/www/investments-backend/public
+                RewriteBase /var/www/investments-mark/public
 
         </Directory>
         # Available loglevels: trace8, ..., trace1, debug, info, notice, warn,
