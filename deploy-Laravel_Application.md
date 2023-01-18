@@ -147,7 +147,8 @@ Add the following lines:
         # following line enables the CGI configuration for this host only
         # after it has been globally disabled with "a2disconf".
         #Include conf-available/serve-cgi-bin.conf
-</VirtualHost>``` 
+</VirtualHost>
+``` 
 
 ## Step 11: Enable Apache Configuration File
 
