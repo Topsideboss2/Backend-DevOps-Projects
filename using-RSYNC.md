@@ -12,7 +12,9 @@ Backup Server:
 
 Install Rsync on both servers with the following command.
 
-`apt-get install rsync`
+```
+apt-get install rsync
+```
 
 NB: **Ensure you are a root user** and if not, use the following command to create a root user and password:
 
@@ -27,13 +29,17 @@ Using password-less login with SSH Keys will increase the trust between two linu
 
 We first generate a public and private key on the 192.168.1.5 server with the following command:
 
-`ssh-keygen -t rsa -b 2048`
+```
+ssh-keygen -t rsa -b 2048
+```
 
 When prompted to enter a passphrase, don't provide one and hit **ENTER** to proceed without one. 
 
 Now once the public and private keys have been generated, we will share it with the 192.168.1.9 server so that the main server will recognize this backup machine and will allow it to login without asking any password while syncing data. Navigate to where the public key is saved, normally the /root/.ssh/ folder and use this command:
 
-`ssh-copy-id ./id_rsa.pub <username>@192.168.1.9`
+```
+ssh-copy-id ./id_rsa.pub <username>@192.168.1.9
+```
 
 ## Step 3: Synchronize/Transfer the files 
 
