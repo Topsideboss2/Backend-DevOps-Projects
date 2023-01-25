@@ -13,3 +13,9 @@ Backup Server:
 Install Rsync on both servers with the following command.
 
 `apt-get install rsync`
+
+NB: *Ensure you are a root user* and if not, use the following command to create a root user and password
+
+```useradd <username>
+passwd <password>
+```
