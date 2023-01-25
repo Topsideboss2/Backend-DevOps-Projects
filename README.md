@@ -12,3 +12,10 @@ One thing I came to appreciate during my time as a DevOps intern was that docume
 ## What Is Laravel? 
 
 Laravel is a free and open-source PHP framework that comes with tools and resources that help you build robust and modern web applications and it provides all of the features you need as a back-end developer such as routing, validation, caching, queues, file storage and more.
+
+
+## What is RSYNC?
+
+Rsync is a Linux-based tool that can be used to sync files between remote and local servers.
+
+The purpose of creating a mirror of your Web Server with Rsync is if your main web server fails, your backup server can take over to reduce downtime of your website. This way of creating a web server backup is very good and effective for small and medium size web businesses.
