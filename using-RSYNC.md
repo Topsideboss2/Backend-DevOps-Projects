@@ -63,7 +63,7 @@ Each rsync command should begin with rsync. It is then followed by an option. Be
 
 If more than one option with a dash is used, they may be consolidated into one bundle of options that has only one dash i.e `-avzhe`
 
-Here is the command you will use on the 192.168.1.9 server to synchronize all files that end with `*.sql` in the `/var/www/` directory:
+Here is the command you will use on the 192.168.1.9 server to synchronize all files that end with `*.sql` in the `/var/www/` directory to save them in the 192.168.1.5 backup server in the `/var/www/server9/databases` directory:
 
 ```
 rsync -avzhe "ssh -p 10000" /var/www/*.sql <username>@192.168.1.5:/var/www/server9/databases/
