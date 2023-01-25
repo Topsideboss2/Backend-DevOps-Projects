@@ -1,4 +1,4 @@
-# Using Rsync
+# Using RSYNC
 
 This is a step by step set of instruction on how to use Rsync to sync data between two web servers. The purpose of creating a backup web server is if your main web server fails, the backup web server can take over to reduce downtime of your website. In this case, we were transferring data from a localized web server to another due to preventive maintenance. This is way of creating a backup web server is very good and effective for small and medium size web businesses.
 
@@ -58,7 +58,7 @@ Each rsync command should begin with rsync. It is then followed by an option. Be
 | `-z` | compress the data synced |
 | `-h` | initiate rsync help |
 | `-e` | tell rsync what shell to use |
-| `-exclude="*.fileType"` | exclude all of a specific filetype. Replace filetype with the actual file type that should be excluded |
+| ` -exclude="*.fileType"` | exclude all of a specific filetype. Replace filetype with the actual file type that should be excluded |
 | `-delete` | delete any extraneous files from the destination directory |
 
 If more than one option with a dash is used, they may be consolidated into one bundle of options that has only one dash i.e `-avzhe`
