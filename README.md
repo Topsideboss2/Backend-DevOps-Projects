@@ -15,7 +15,7 @@ Laravel is a free and open-source PHP framework that comes with tools and resour
 
 ## What is React?
 
-React is 
+React is a Javascript library for building user interfaces.  
 
 
 ## What is Rsync?
