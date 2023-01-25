@@ -82,7 +82,7 @@ Use the command below:
 
 | Command | Description |
 | ------- | ----------- |
-| `mysql -u root -p | Log into mysql providing your password |
+| `mysql -u root -p` | Log into mysql providing your password |
 | `create database investmentsmark;` | Create the database itself |
 | `exit` | Exit
 
