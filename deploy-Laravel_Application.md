@@ -53,12 +53,12 @@ Also, depending on the version of composer that we need, we will have to install
 **NB** - Composer is installed into the folder of the project. In my case the folder of my project was cloned into /var/www/investments-mark
 | Command | Description |
 | ------- | ----------- |
-| `cd /var/www/investments-mark | This will navigate me to my project folder |
+| `cd /var/www/investments-mark` | This will navigate me to my project folder |
 | `sudo apt-get install composer -y` | Installs composer on the Ubuntu system |
 | `composer install` | This will install composer onto our project folder |
 | `sudo a2dismod php8.1` | This will disable the version of php we had previously installed|
 | `sudo a2enmod php7.1` | This will enable the version of php that we currently require based on our project |
-| `apt-get install php7.1-{BCMath,Ctype,curl,DOM,Fileinfo,Mbstring,PDO,Tokenizer,XML,zip,mysql,fpm} | This will install php requirements |
+| `apt-get install php7.1-{BCMath,Ctype,curl,DOM,Fileinfo,Mbstring,PDO,Tokenizer,XML,zip,mysql,fpm}` | This will install php requirements |
 
 ## Step 5: Link storage to Public Disk
 
