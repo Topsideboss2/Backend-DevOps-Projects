@@ -22,4 +22,4 @@ sudo service apache2 restart
 ```
 Then using a web browser go to the address of that server. i.e `http://192.168.1.123/`
 
-
+![]()
