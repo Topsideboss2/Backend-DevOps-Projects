@@ -38,8 +38,7 @@ sudo ufw status
 The default policy firewall works great for servers. It is always a good policy to close all ports on the server and open only required portss one by one. To block all incoming connection and only allow outgoing connections use the following commands
 ```
 sudo ufw default allow outgoing
-```
-```
+
 sudo ufw default deny incoming
 ```
 The next logical step is to allow incoming SSH ports. Use:
