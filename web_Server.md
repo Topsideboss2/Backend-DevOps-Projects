@@ -62,7 +62,9 @@ PHP is a server-side scripting language, we will use this to interact with a MyS
 sudo apt-get install php libapache2-mod-php php-mysql
 ```
 
-When the web application is up and running:
+From here, follow instructions on the [Deploy A Laravel Application](https://github.com/Topsideboss2/DevOps-Projects/blob/master/deploy-Laravel_Application.md) to finish setting up the web application. 
+
+When the web application is up and running, it should display:
 ![](https://github.com/Topsideboss2/DevOps-Projects/blob/master/images/web_server2.png)
 ![](https://github.com/Topsideboss2/DevOps-Projects/blob/master/images/web_server3.png)
 ![](https://github.com/Topsideboss2/DevOps-Projects/blob/master/images/web_server4.png)
