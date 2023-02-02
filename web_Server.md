@@ -1,8 +1,15 @@
 # Web Server
 
-## Setting up a Web Server
+DevOps involves deployment and monitoring of web applications, web services, microservices and other types of applications hosted on web servers.
+DevOps team has a focus of smoothening operations of mission-critical web applications. Specific skills required are:
+* Understanding of layer 7 routing & HTTP protocols
+* Ability to execute web application deployments
+* Experience with common web servers like **Apache** and **Nginx**
+* Basic knowledge of common web application stacks and how to configure them
 
-Setting up a **Web Server** is pretty simple and direct, others might find it a little daunting but it really should not be.
+Here I will preview how to set up a simple Web Server to run a simple web application called [UnifiedTransform.](https://github.com/changeweb/Unifiedtransform) 
+
+## Setting up a Web Server
 
 On your Ubuntu Server, what should be added is an apache webserver to allow it to host a simple website from it. This is often referred to as a LAMP stack. 
 * Linux Operating System
@@ -21,5 +28,24 @@ To confirm that apache2 is installed correctly run
 sudo service apache2 restart
 ```
 Then using a web browser go to the address of that server. i.e `http://192.168.1.123/`
+It should display the following on your web page:
 
 ![](https://github.com/Topsideboss2/DevOps-Projects/blob/master/images/web_server1.png)
+
+# mySQL
+
+MySQL is a database where data for the website is stored. To get MySQL installed use the command:
+```
+sudo apt-get install mysql-server
+```
+
+# php
+PHP is a server-side scripting language, we will use this to interact with a MySQL database. The final installation is to get PHP and dependencies installed using 
+```
+sudo apt-get install php libapache2-mod-php php-mysql
+```
+
+When the web application is up and running:
+![](https://github.com/Topsideboss2/DevOps-Projects/blob/master/images/web_server2.png)
+![](https://github.com/Topsideboss2/DevOps-Projects/blob/master/images/web_server3.png)
+![](https://github.com/Topsideboss2/DevOps-Projects/blob/master/images/web_server4.png)
