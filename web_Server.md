@@ -20,7 +20,11 @@ On your Ubuntu Server, what should be added is an apache webserver to allow it t
 ## Linux 
 
 Before performing any software installation on Ubuntu, the first action you need to perform is to update the system repository to ensure that the OS has all of the latest packages available for installation.
-Run the `sudo apt update` command to update the APT package index to the latest version. Do not forget the `sudo` command to elevate permissions for a non-priviledged account.
+Run the following command to update the APT package index to the latest version:
+```
+sudo apt update
+```
+Do not forget the `sudo` command to elevate permissions for a non-priviledged account.
 Also, check the firewall settings to make sure that the Apache software installed will be accessible on a public IP address. The UFW(Uncomplicated Firewall) program on Ubuntu lets users manage firewalls on Linux.
 UFW comes pre-installed on Ubuntu 22.04 but in case you do not have it, run the following command to install it.
 ```
