@@ -23,16 +23,28 @@ Before performing any software installation on Ubuntu, the first action you need
 Run the `sudo apt update` command to update the APT package index to the latest version. Do not forget the `sudo` command to elevate permissions for a non-priviledged account.
 Also, check the firewall settings to make sure that the Apache software installed will be accessible on a public IP address. The UFW(Uncomplicated Firewall) program on Ubuntu lets users manage firewalls on Linux.
 UFW comes pre-installed on Ubuntu 22.04 but in case you do not have it, run the following command to install it.
-```sudo apt install ufw```
+```
+sudo apt install ufw
+```
 To view status of ufw, type:
-```sudo ufw status```
+```
+sudo ufw status
+```
 The default policy firewall works great for servers. It is always a good policy to close all ports on the server and open only required portss one by one. To block all incoming connection and only allow outgoing connections use the following commands
-```sudo ufw default allow outgoing```
-```sudo ufw default deny incoming```
+```
+sudo ufw default allow outgoing
+```
+```
+sudo ufw default deny incoming
+```
 The next logical step is to allow incoming SSH ports. Use:
-```sudo ufw allow ssh```
+```
+sudo ufw allow ssh
+```
 Finally turn on the firewall. Use the command:
-```sudo ufw enable```
+```
+sudo ufw enable
+```
 
 ## Apache2
 
