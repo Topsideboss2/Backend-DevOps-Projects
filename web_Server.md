@@ -17,6 +17,23 @@ On your Ubuntu Server, what should be added is an apache webserver to allow it t
 * mySQL database
 * PHP
 
+## Linux 
+
+Before performing any software installation on Ubuntu, the first action you need to perform is to update the system repository to ensure that the OS has all of the latest packages available for installation.
+Run the `sudo apt update` command to update the APT package index to the latest version. Do not forget the `sudo` command to elevate permissions for a non-priviledged account.
+Also, check the firewall settings to make sure that the Apache software installed will be accessible on a public IP address. The UFW(Uncomplicated Firewall) program on Ubuntu lets users manage firewalls on Linux.
+UFW comes pre-installed on Ubuntu 22.04 but in case you do not have it, run the following command to install it.
+```sudo apt install ufw```
+To view status of ufw, type:
+```sudo ufw status```
+The default policy firewall works great for servers. It is always a good policy to close all ports on the server and open only required portss one by one. To block all incoming connection and only allow outgoing connections use the following commands
+```sudo ufw default allow outgoing```
+```sudo ufw default deny incoming```
+The next logical step is to allow incoming SSH ports. Use:
+```sudo ufw allow ssh```
+Finally turn on the firewall. Use the command:
+```sudo ufw enable```
+
 ## Apache2
 
 Apache2 is an open-source HTTP server. It is installed with the following command.
@@ -32,14 +49,14 @@ It should display the following on your web page:
 
 ![](https://github.com/Topsideboss2/DevOps-Projects/blob/master/images/web_server1.png)
 
-# mySQL
+## mySQL
 
 MySQL is a database where data for the website is stored. To get MySQL installed use the command:
 ```
 sudo apt-get install mysql-server
 ```
 
-# php
+## php
 PHP is a server-side scripting language, we will use this to interact with a MySQL database. The final installation is to get PHP and dependencies installed using 
 ```
 sudo apt-get install php libapache2-mod-php php-mysql
