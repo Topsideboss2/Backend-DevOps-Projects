@@ -22,4 +22,4 @@ sudo service apache2 restart
 ```
 Then using a web browser go to the address of that server. i.e `http://192.168.1.123/`
 
-![](/Users/markkibara/Documents/myGithubRepos/DevOps-Projects/images/web_server1.png)
+![](https://github.com/Topsideboss2/DevOps-Projects/blob/master/images/web_server1.png)
