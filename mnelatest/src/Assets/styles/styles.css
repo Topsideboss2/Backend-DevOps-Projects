@@ -1,0 +1,39 @@
+.sub-t{
+    font-size: 1.125rem;
+    font-weight: 500;
+}
+
+.sub-sub-t{
+    font-size: 1.025rem;
+    font-weight: 400;
+}
+.center{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.left-side{
+    display:flex;
+    justify-content: flex-start;
+
+}
+.right-side{
+    display:flex;
+    justify-content: flex-end;
+
+}
+.btn-light-color{
+    background-color: #00d47a;
+    color:#fff;
+}
+.btn-dark-color{
+    background-color: #00a15d;
+    color:#fff;
+}
+.swal2-container {
+    z-index: 5000;
+  }
+  .chh{
+    cursor: pointer;
+}

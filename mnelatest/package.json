@@ -1,0 +1,72 @@
+{
+  "name": "mne",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@ckeditor/ckeditor5-build-classic": "^35.4.0",
+    "@ckeditor/ckeditor5-react": "^5.0.3",
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
+    "@googlemaps/react-wrapper": "^1.1.35",
+    "@hookform/resolvers": "^2.9.10",
+    "@mui/icons-material": "^5.10.16",
+    "@mui/joy": "^5.0.0-alpha.63",
+    "@mui/lab": "^5.0.0-alpha.111",
+    "@mui/material": "^5.10.16",
+    "@mui/x-date-pickers": "^5.0.10",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "axios": "^1.2.0",
+    "classnames": "^2.3.2",
+    "dayjs": "^1.11.7",
+    "formik": "^2.2.9",
+    "google-map-react": "^2.2.0",
+    "lodash": "^4.17.21",
+    "moment": "^2.29.4",
+    "prop-types": "^15.8.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-loader-spinner": "^5.3.4",
+    "react-loading-skeleton": "^3.1.0",
+    "react-phone-input-2": "^2.15.1",
+    "react-places-autocomplete": "^7.3.0",
+    "react-redux": "^8.0.5",
+    "react-router-dom": "^6.4.4",
+    "react-scripts": "5.0.1",
+    "react-select": "^5.7.0",
+    "recharts": "^2.2.0",
+    "redux": "^4.2.0",
+    "redux-devtools-extension": "^2.13.9",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.4.2",
+    "styled-components": "^5.3.6",
+    "sweetalert2": "^11.6.15",
+    "web-vitals": "^2.1.4",
+    "yup": "^0.32.11"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

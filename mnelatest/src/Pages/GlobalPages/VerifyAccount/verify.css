@@ -1,0 +1,7 @@
+@media query and(width:700px){
+    .verifyy {
+        place-items: start;
+        padding-right: 30px;
+        display:grid;
+    }
+}
