@@ -162,3 +162,5 @@ Add the following lines:
 | Command | Description |
 | ------- | ----------- |
 | `vim /etc/apache2/ports.conf` | Add the respective ports on the file |
+
+![](https://github.com/Topsideboss2/DevOps-Projects/blob/master/images/aws1.png)
