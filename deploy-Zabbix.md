@@ -24,7 +24,10 @@ apt install zabbix-server-mysql zabbix-frontend-php zabbix-apache-conf zabbix-sq
 ```
 
 Now we will create the database that zabbix uses to store data.
-
+Ensure you have mysql installed on your server. If not, run the command
+```
+apt install -y mysql-server
+```
 Log into mysql and input your password
 ```shell
 mysql -uroot -p
@@ -51,7 +54,8 @@ mysql> SET GLOBAL log_bin_trust_function_creators = 0;
 mysql> QUIT;
 ```
 Next you want to configure the database for zabbix server. 
-Head over to the `/etc/zabbix/zabbix_server.conf` file and nano or vim into it.
+
+Now head over to the `/etc/zabbix/zabbix_server.conf` file and nano or vim into it.
 
 Add into the file
 ```
