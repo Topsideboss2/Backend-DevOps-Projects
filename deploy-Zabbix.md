@@ -81,3 +81,22 @@ Now you can open the Zabbix UI web page. The default URL for Zabbix UI when usin
 
 Your Zabbix site should be up and running
 ![](images/Zabbix1.png)
+
+## How to change Zabbix Frontend UI Password
+
+Run this to create a password encrypted with bcrypt
+```
+htpasswd -bnBC 10 "zabbix" password | tr -d ':\n'
+```
+
+This is the encrypted password for "password"
+$2y$10$10Qz19ztIyXFsdzqWMdzTejMUW0uAB9pGZ5lRjjFq5k5/u.M9PCIa
+
+Run this mysql command for the zabbix database
+```mysql
+mysql -u root -p
+	use zabbix;
+	update zabbix.users set passwd=('$2y$10$10Qz19ztIyXFsdzqWMdzTejMUW0uAB9pGZ5lRjjFq5k5/u.M9PCIa') where userid='1';
+	quit;
+```
+Login to the web frontend using the username Admin and password password
