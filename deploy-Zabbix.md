@@ -100,3 +100,13 @@ mysql -u root -p
 	quit;
 ```
 Login to the web frontend using the username Admin and password password
+
+
+mysql -u root -p
+use zabbix;
+update zabbix.users set passwd=('$2y$10$EXMoCAwbtIie.YtTNjW.n.Ynqz/ZAua53G31WhcJ/xrvT3usIYpWy') where userid='1';
+quit;
+
+Log in.
+
+![](images/ZabbixUI.png)
