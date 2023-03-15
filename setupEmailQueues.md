@@ -46,7 +46,7 @@ service supervisor status
 The configuration files for supervisor are typically stored in the `/etc/supervisor/conf.d` directory. In this directory, you can create any number of configuration files that instruct supervisor how your processes should be monitored.
 To create a configuration file, execute the following command.
 ```markdown
-$ sudo nano/etc/supervisor/conf.d/Notifications.conf
+$ sudo nano /etc/supervisor/conf.d/Notifications.conf
 ```
 
 Edit this file and enter the configurations as shown below.
