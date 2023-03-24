@@ -1,4 +1,8 @@
-# Deploy Laravel Application
+# What Is Laravel?
+
+Laravel is a free and open-source PHP framework that comes with tools and resources that help you build robust and modern web applications and it provides all of the features you need as a back-end developer such as routing, validation, caching, queues, file storage and more.
+
+## Deploy Laravel Application
 
 This is a step by step instruction on how **Laravel** applications are deployed onto an **Apache Server** running on a **Linux Server with Ubuntu** operating system.
 
